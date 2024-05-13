@@ -1,16 +1,56 @@
-# This is a sample Python script.
+from flask import *
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+app = Flask(__name__)
 
+@app.route("/") #decorator
+def minhaPag():
+    return render_template('login.html')
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+@app.route('/login', methods=['POST'])
+def login():
+    username = request.form['username']
+    password = request.form['password']
+    # Validação de login (substitua por sua lógica de autenticação)
+    if username == "admin" and password == "senha123":
+        return render_template('menu.html')
+    else:
+        texto = 'login ou senha incorretos'
+        return render_template('login.html', aviso=texto)
+@app.route('/cadastro')
+def cadastro():
+    return render_template('cadastro.html')
 
+@app.route('/cadastrar', methods=['POST'])
+def cadastrar():
+    nome = request.form['nome']
+    username = request.form['username']
+    password = request.form['password']
+    foto = request.files['foto']
+    texto = 'Cadastro realizado com sucesso!'
+    return render_template('login.html', aviso=texto)
 
-# Press the green button in the gutter to run the script.
+@app.route('/menu')
+def menu():
+    return render_template('menu.html')
+@app.route('/perfil')
+def perfil():
+    return render_template('perfil.html')
+
+@app.route('/sair')
+def sair():
+    # Limpe a sessão do usuário (implemente sua lógica de logout)
+    # Redirecione para a página inicial ou outra página adequada
+    return redirect('/')
+
+@app.route('/produtos')
+def produtos():
+    produtos = [
+        {"nome": "Product 1", "imagem": "product1.jpg"},
+        {"nome": "Product 2", "imagem": "product2.jpg"},
+        # ...
+    ]
+
+    return render_template('produtos.html', produtos=produtos)
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+	app.run()
