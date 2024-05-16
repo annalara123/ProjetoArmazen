@@ -10,7 +10,6 @@ def minhaPag():
 def login():
     username = request.form['username']
     password = request.form['password']
-    # Validação de login (substitua por sua lógica de autenticação)
     if username == "admin" and password == "senha123":
         return render_template('menu.html')
     else:
@@ -38,8 +37,6 @@ def perfil():
 
 @app.route('/sair')
 def sair():
-    # Limpe a sessão do usuário (implemente sua lógica de logout)
-    # Redirecione para a página inicial ou outra página adequada
     return redirect('/')
 
 @app.route('/produtos')
