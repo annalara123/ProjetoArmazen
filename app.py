@@ -1,6 +1,7 @@
 from flask import *
 
 app = Flask(__name__)
+app.secret_key = "jk2h3kj23hrk2h5"
 
 @app.route("/") #decorator
 def minhaPag():
