@@ -1,6 +1,7 @@
 from flask import *
 
 app = Flask(__name__)
+app.secret_key = "jk2h3kj23hrk2h5"
 
 @app.route("/") #decorator
 def minhaPag():
@@ -10,8 +11,8 @@ def minhaPag():
 def login():
     username = request.form['username']
     password = request.form['password']
-    # Validação de login (substitua por sua lógica de autenticação)
     if username == "admin" and password == "senha123":
+        session ['username'] = username
         return render_template('menu.html')
     else:
         texto = 'login ou senha incorretos'
@@ -37,20 +38,21 @@ def perfil():
     return render_template('perfil.html')
 
 @app.route('/sair')
-def sair():
-    # Limpe a sessão do usuário (implemente sua lógica de logout)
-    # Redirecione para a página inicial ou outra página adequada
-    return redirect('/')
+def logout():
+    session.pop('username', None)
+    response = make_response('Você foi desconectado.')
+    response.set_cookie('username', '', max_age=0)
+    return render_template('login.html', response=response)
+
 
 @app.route('/produtos')
 def produtos():
     produtos = [
         {"nome": "Product 1", "imagem": "product1.jpg"},
         {"nome": "Product 2", "imagem": "product2.jpg"},
-        # ...
-    ]
 
+    ]
     return render_template('produtos.html', produtos=produtos)
 
 if __name__ == '__main__':
-	app.run()
+	app.run(debug=True)
