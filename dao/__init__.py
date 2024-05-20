@@ -23,9 +23,9 @@ def listar_usuarios():
     print(results)
 
 
-def login(usuario,senha):
+def login(usuario,senha , tipo):
     conexao = conectar_localBD()
     cursor = conexao.cursor()
-    sql = "select * from usuarios where email='{usuario}' , senha='{senha} and '"
+    sql = "select * from usuarios where email='{usuario}' , senha='{senha} and tipo'{tipo}'"
     cursor.execute(sql)
 
