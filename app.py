@@ -37,18 +37,20 @@ def perfil():
     return render_template('perfil.html')
 
 @app.route('/sair')
-def sair():
-    return redirect('/')
+def logout():
+    response = make_response('Você foi desconectado.')
+    response.set_cookie('username', '', max_age=0)
+    return render_template('login.html', response=response)
+
 
 @app.route('/produtos')
 def produtos():
     produtos = [
         {"nome": "Product 1", "imagem": "product1.jpg"},
         {"nome": "Product 2", "imagem": "product2.jpg"},
-        # ...
-    ]
 
+    ]
     return render_template('produtos.html', produtos=produtos)
 
 if __name__ == '__main__':
-	app.run()
+	app.run(debug=True)
