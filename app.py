@@ -12,6 +12,7 @@ def login():
     username = request.form['username']
     password = request.form['password']
     if username == "admin" and password == "senha123":
+        session ['username'] = username
         return render_template('menu.html')
     else:
         texto = 'login ou senha incorretos'
@@ -38,6 +39,7 @@ def perfil():
 
 @app.route('/sair')
 def logout():
+    session.pop('username', None)
     response = make_response('Você foi desconectado.')
     response.set_cookie('username', '', max_age=0)
     return render_template('login.html', response=response)
