@@ -7,7 +7,12 @@
     <list default="true" id="bc47e4c3-d504-4610-bda9-f25b7f3b4055" name="Changes" comment="Adição da pasta static, com a pagina css e imager">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/dao/__init__.py" afterDir="false" />
+    <list default="true" id="bc47e4c3-d504-4610-bda9-f25b7f3b4055" name="Changes" comment="limpeza">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+
     </list>
+    <list id="61137a86-1d9b-4892-81f0-aa22ca319f14" name="Changes by pegas" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +41,9 @@
       </branch-storage>
     </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.venv/.gitignore" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -138,6 +146,26 @@
       <method v="2" />
     </configuration>
     <configuration name="app (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.app.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/nalar/Downloads/projetoAcompanhamento",
+    "settings.editor.selected.configurable": "CodeWithMe"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nalar\Downloads\projetoAcompanhamento" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="projetoAcompanhamento" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -224,6 +252,7 @@
     </task>
     <task id="LOCAL-00002" summary="Adição da pasta static, com a pagina css e imager">
       <option name="closed" value="true" />
+
       <created>1716241803285</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
@@ -231,6 +260,46 @@
       <updated>1716241803285</updated>
     </task>
     <option name="localTasksCounter" value="3" />
+
+      <created>1715622041690</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715622041690</updated>
+    </task>
+    <task id="LOCAL-00003" summary="limpeza">
+      <option name="closed" value="true" />
+      <created>1715877111707</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715877111707</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1605">
+      <option name="closed" value="true" />
+      <created>1715877350489</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715877350489</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1605">
+      <option name="closed" value="true" />
+      <created>1716221977394</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716221977394</updated>
+    </task>
+    <task id="LOCAL-00006" summary="limpeza">
+      <option name="closed" value="true" />
+      <created>1716222129131</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716222129132</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,6 +315,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adição da pasta static, com a pagina css e imager" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adição da pasta static, com a pagina css e imager" />
+    <MESSAGE value="1605" />
+    <MESSAGE value="limpeza" />
+    <option name="LAST_COMMIT_MESSAGE" value="limpeza" />
   </component>
 </project>
