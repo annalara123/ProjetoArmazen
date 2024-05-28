@@ -1,4 +1,6 @@
 from flask import *
+from dao import *
+from dao2 import *
 
 app = Flask(__name__)
 app.secret_key = "jk2h3kj23hrk2h5"
@@ -7,12 +9,14 @@ app.secret_key = "jk2h3kj23hrk2h5"
 def minhaPag():
     return render_template('login.html')
 
-@app.route('/login', methods=['POST'])
+@app.route('/loginDeUsuario', methods=['POST'])
 def login():
-    username = request.form['username']
+    email = request.form['email']
     password = request.form['password']
-    if username == "admin" and password == "senha123":
-        session ['username'] = username
+    usuario = logar_usuario(email, password)
+
+    if usuario:
+        session['username'] = usuario['email']
         return render_template('menu.html')
     else:
         texto = 'login ou senha incorretos'
@@ -21,18 +25,27 @@ def login():
 def cadastro():
     return render_template('cadastro.html')
 
-@app.route('/cadastrar', methods=['POST'])
+@app.route('/cadastrarUsuario', methods=['POST'])
 def cadastrar():
     nome = request.form['nome']
-    username = request.form['username']
-    password = request.form['password']
-    foto = request.files['foto']
+    email = request.form['email']
+    senha = request.form['password']
+    tipo = request.form['tipo']
+
+    cadastrar_usuario(nome, email, senha, tipo)
+
     texto = 'Cadastro realizado com sucesso!'
     return render_template('login.html', aviso=texto)
 
 @app.route('/menu')
 def menu():
-    return render_template('menu.html')
+    tipo_usuario = get_tipo_usuario()  # assume this function returns the tipo of the current user
+    if tipo_usuario == "Admin":
+        mostrar_controle_de_usuarios = True
+    else:
+        mostrar_controle_de_usuarios = False
+
+    return render_template('menu.html', mostrar_controle_de_usuarios=mostrar_controle_de_usuarios)
 @app.route('/perfil')
 def perfil():
     return render_template('perfil.html')
@@ -47,12 +60,24 @@ def logout():
 
 @app.route('/produtos')
 def produtos():
-    produtos = [
-        {"nome": "Product 1", "imagem": "product1.jpg"},
-        {"nome": "Product 2", "imagem": "product2.jpg"},
-
-    ]
+    produtos = listar_produtos()
     return render_template('produtos.html', produtos=produtos)
+@app.route('/cadastroProdutos', methods=['GET', 'POST'])
+def cadastroProdutos():
+    if request.method == 'POST':
+        nome = request.form['nome']
+        marca = request.form['marca']
+        validade = request.form['validade']
+        preco = request.form['preco']
+        quantidade_disponivel = request.form['quantidade_disponivel']
+        foto_caminho = request.files['foto_caminho']
+
+        cadastrar_produto(nome, marca, validade, preco, quantidade_disponivel, foto_caminho)
+
+        return 'Produto cadastrado com sucesso!'
+    else:
+        return render_template('cadastroProdutos.html')
+
 
 if __name__ == '__main__':
 	app.run(debug=True)

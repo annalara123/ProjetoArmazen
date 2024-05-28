@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Produtos</title>
+    <style>
+       .hidden-link {
+            visibility: hidden;
+        }
+    </style>
 </head>
 <body>
+    <a href="/logout">Logout</a><br><br>
     <h1>Produtos Disponíveis</h1>
-    <ul>
-        {% for produto in produtos %}
-            <li>
-                <img src="{{ produto.imagem }}" alt="{{ produto.nome }}">
-                <h2>{{ produto.nome }}</h2>
-            </li>
-        {% endfor %}
-    </ul>
-    <a href="/menu  ">Voltar para Menu</a>
+    {% for produto in produtos %}
+        <p>
+            <img src="{{produto.foto_caminho}}" alt="{{produto.nome}}" width="90" height="130">
+            <h2>{{produto.nome}}</h2>
+            <p>Marca: {{produto.marca}}</p>
+            <p>Validade: {{produto.validade}}</p>
+            <p>Preço: {{produto.preco}}</p>
+            <p>Quantidade Disponível: {{produto.quantidade_disponivel}}</p>
+            <a href="/detalhesproduto?produto={{produto.nome}}"><img src="static/imagens/view.png" width="20" height="30"></a>
+        </p>
+        <hr>
+    {% endfor %}
+    <br>
+    <a href="/menu">Voltar para Menu</a>
+    <a href="/cadastro-de-produtos" class="hidden-link">Cadastro de Produtos</a>
 </body>
 </html>
