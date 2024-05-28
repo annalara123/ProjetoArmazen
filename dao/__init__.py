@@ -72,6 +72,19 @@ def logar_usuario(email, senha, tipo):
     conexao.close()
     return usuario
 
+def get_tipo_usuario():
+    conexao = conectar_localBD()
+    if conexao is None:
+        return None
+
+    try:
+        cursor = conexao.cursor()
+        cursor.execute("SELECT * FROM usuarios WHERE tipo = %s", ('Admin',))
+        resultado = cursor.fetchone()
+        return resultado
+    finally:
+        conexao.close()
+
 def deletar_usuario(email):
     conexao = conectar_localBD()
     if conexao is None:
