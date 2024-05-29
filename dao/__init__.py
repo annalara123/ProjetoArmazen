@@ -32,6 +32,8 @@ def listar_usuarios():
     conexao.close()
     return resultados
 
+
+print(listar_usuarios())
 def cadastrar_usuario(nome, email, senha, tipo):
     conexao = conectar_localBD()
     if conexao is None:

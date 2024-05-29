@@ -21,16 +21,17 @@ def login():
     else:
         texto = 'login ou senha incorretos'
         return render_template('login.html', aviso=texto)
+
 @app.route('/cadastro')
 def cadastro():
     return render_template('cadastro.html')
 
 @app.route('/cadastrarUsuario', methods=['POST'])
 def cadastrar():
-    nome = request.form['nome']
-    email = request.form['email']
-    senha = request.form['password']
-    tipo = request.form['tipo']
+    nome = request.form.get('nome')
+    email = request.form.get('email')
+    senha = request.form.get('password')
+    tipo = request.form.get('tipo')
 
     cadastrar_usuario(nome, email, senha, tipo)
 
