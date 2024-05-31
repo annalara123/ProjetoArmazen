@@ -4,39 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc47e4c3-d504-4610-bda9-f25b7f3b4055" name="Changes" comment="Adição da pasta static, com a pagina css e imager">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/projetoAcompanhamento.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projetoAcompanhamento.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="bc47e4c3-d504-4610-bda9-f25b7f3b4055" name="Changes" comment="limpeza">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/activate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/activate.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/activate.fish" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/activate.nu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/activate.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/activate_this.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/deactivate.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/flask.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/gunicorn.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/pip.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/pip3.11.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/pip3.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/pydoc.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/python.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/pythonw.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/wheel-3.11.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/wheel.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/wheel3.11.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/wheel3.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/pyvenv.cfg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/dao/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$USER_HOME$/PycharmProjects/JVAOproj/.idea/Teste.iml" beforeDir="false" afterPath="$USER_HOME$/PycharmProjects/JVAOproj/.idea/Teste.iml" afterDir="false" />
-      <change beforePath="$USER_HOME$/PycharmProjects/JVAOproj/.idea/misc.xml" beforeDir="false" afterPath="$USER_HOME$/PycharmProjects/JVAOproj/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$USER_HOME$/PycharmProjects/JVAOproj/templates/login.html" beforeDir="false" afterPath="$USER_HOME$/PycharmProjects/JVAOproj/templates/login.html" afterDir="false" />
     </list>
+    <list id="61137a86-1d9b-4892-81f0-aa22ca319f14" name="Changes by pegas" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,50 +18,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <favorite-branches>
-      <branch-storage>
-        <map>
-          <entry type="REMOTE">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="origin/jv" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;history&quot;: [
-    {
-      &quot;state&quot;: &quot;OPEN&quot;
-    }
-  ],
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="recentNewPullRequestHead">
-      <RepoCoordinatesHolder>
-        <option name="owner" value="annalara123" />
-        <option name="repository" value="ProjetoArmazen" />
-      </RepoCoordinatesHolder>
-    </option>
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="48a0897e-05c4-4757-865e-d1b4bcc4f7aa" />
-        <option name="url" value="https://github.com/annalara123/ProjetoArmazen.git" />
-      </UrlAndAccount>
-    </option>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.venv/.gitignore" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -102,136 +38,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.__init__ (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.__init__ (2).executor&quot;: &quot;Run&quot;,
-    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
-    &quot;Python.app (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.app.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;jv&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pegas/PycharmProjects&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.app.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/nalar/Downloads/projetoAcompanhamento",
+    "settings.editor.selected.configurable": "CodeWithMe"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pegas\OneDrive\Documentos\GitHub\ProjetoArmazen" />
+      <recent name="C:\Users\nalar\Downloads\projetoAcompanhamento" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.app (1)">
-    <configuration name="__init__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="projetoAcompanhamento" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dao" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dao/__init__.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="__init__ (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="projetoAcompanhamento" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dao2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dao2/__init__.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="projetoAcompanhamento" />
-      <option name="ENV_FILES" value="$PROJECT_DIR$/templates/dao" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (pythonProject)" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/templates/dao" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/templates/dao/__init__.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="app (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="projetoAcompanhamento" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="projetoAcompanhamento" />
-      <option name="ENV_FILES" value="$PROJECT_DIR$" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (pythonProject)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../../../nalar/Downloads/projetoAcompanhamento/app.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\nalar\Downloads\projetoAcompanhamento\app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -240,21 +79,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Python.app" />
-      <item itemvalue="Python.__init__ (2)" />
-      <item itemvalue="Python.__init__ (1)" />
-      <item itemvalue="Python.app (1)" />
-      <item itemvalue="Python.__init__" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.app (1)" />
-        <item itemvalue="Python.__init__ (1)" />
-        <item itemvalue="Python.__init__ (2)" />
-        <item itemvalue="Python.__init__" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -264,9 +88,6 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration>C:\Users\pegas\AppData\Roaming\Subversion</configuration>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="bc47e4c3-d504-4610-bda9-f25b7f3b4055" name="Changes" comment="" />
@@ -285,21 +106,45 @@
     </task>
     <task id="LOCAL-00002" summary="Adição da pasta static, com a pagina css e imager">
       <option name="closed" value="true" />
-      <created>1716241803285</created>
+      <created>1715622041690</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1716241803285</updated>
+      <updated>1715622041690</updated>
     </task>
-    <task id="LOCAL-00003" summary="Adição da pasta static, com a pagina css e imager">
+    <task id="LOCAL-00003" summary="limpeza">
       <option name="closed" value="true" />
-      <created>1716242660005</created>
+      <created>1715877111707</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1716242660005</updated>
+      <updated>1715877111707</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1605">
+      <option name="closed" value="true" />
+      <created>1715877350489</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715877350489</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1605">
+      <option name="closed" value="true" />
+      <created>1716221977394</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716221977394</updated>
+    </task>
+    <task id="LOCAL-00006" summary="limpeza">
+      <option name="closed" value="true" />
+      <created>1716222129131</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716222129132</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -307,19 +152,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -327,6 +160,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adição da pasta static, com a pagina css e imager" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adição da pasta static, com a pagina css e imager" />
+    <MESSAGE value="1605" />
+    <MESSAGE value="limpeza" />
+    <option name="LAST_COMMIT_MESSAGE" value="limpeza" />
   </component>
 </project>
