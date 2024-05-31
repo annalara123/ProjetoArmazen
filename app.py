@@ -1,49 +1,41 @@
 from flask import *
-
-import dao2
 from dao import *
 from dao2 import *
 
 app = Flask(__name__)
 app.secret_key = "jk2h3kj23hrk2h5"
-app.config['UPLOAD_FOLDER'] = 'static/imagens/'
 
-@app.route("/", methods=['GET', 'POST']) # decorator
+@app.route("/") #decorator
 def minhaPag():
-    if request.method == 'POST':
-        email = request.form['email']
-        password = request.form['senha']
-        usuario = logar_usuario(email, password)
+    return render_template('login.html')
 
-        if usuario:
-            session['email'] = usuario['email']
-            return render_template('menu.html')
-        else:
-            texto = 'login ou senha incorretos'
-            return render_template('login.html', aviso=texto)
+@app.route('/loginDeUsuario', methods=['POST'])
+def login():
+    email = request.form['email']
+    password = request.form['password']
+    usuario = logar_usuario(email, password)
+
+    if usuario:
+        session['username'] = usuario['email']
+        return render_template('menu.html')
     else:
-        return render_template('login.html')
-@app.route('/cadastro', methods=['GET', 'POST'])
-def cadastro():
-    if request.method == 'POST':
-        nome = request.form['nome']
-        email = request.form['email']
-        senha = request.form['password']
-        tipo = request.form['tipo']
-
-        cadastrar_usuario(nome, email, senha, tipo)
-
-        texto = 'Cadastro realizado com sucesso!'
+        texto = 'login ou senha incorretos'
         return render_template('login.html', aviso=texto)
-    else:
-        return render_template('cadastro.html')
+@app.route('/cadastro')
+def cadastro():
+    return render_template('cadastro.html')
 
-@app.route('/sair')
-def logout():
-    session.pop('username', None)
-    response = make_response('Você foi desconectado.')
-    response.set_cookie('username', '', max_age=0)
-    return render_template('login.html', response=response)
+@app.route('/cadastrarUsuario', methods=['POST'])
+def cadastrar():
+    nome = request.form['nome']
+    email = request.form['email']
+    senha = request.form['password']
+    tipo = request.form['tipo']
+
+    cadastrar_usuario(nome, email, senha, tipo)
+
+    texto = 'Cadastro realizado com sucesso!'
+    return render_template('login.html', aviso=texto)
 
 @app.route('/menu')
 def menu():
@@ -58,13 +50,18 @@ def menu():
 def perfil():
     return render_template('perfil.html')
 
-@app.route('/listarProdutos', methods= ['GET'])
+@app.route('/sair')
+def logout():
+    session.pop('username', None)
+    response = make_response('Você foi desconectado.')
+    response.set_cookie('username', '', max_age=0)
+    return render_template('login.html', response=response)
+
+
+@app.route('/produtos')
 def produtos():
-    if session.get('email') != None:
-        result = dao2.listar_produtos(0)
-        return render_template('produtos.html', produtos=result, meuemail=session.get('email'))
-    else:
-        return 'Sem produtos'
+    produtos = listar_produtos()
+    return render_template('produtos.html', produtos=produtos)
 @app.route('/cadastroProdutos', methods=['GET', 'POST'])
 def cadastroProdutos():
     if request.method == 'POST':
