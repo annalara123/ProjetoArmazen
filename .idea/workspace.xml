@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc47e4c3-d504-4610-bda9-f25b7f3b4055" name="Changes" comment="Novas rotas e paginas">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cadastro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/produtos.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/produtos.html" afterDir="false" />
-    </list>
+    <list default="true" id="bc47e4c3-d504-4610-bda9-f25b7f3b4055" name="Changes" comment="Ajuste do HTML e das rotas" />
     <list id="61137a86-1d9b-4892-81f0-aa22ca319f14" name="Changes by pegas" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716920790735</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ajuste do HTML e das rotas">
+      <option name="closed" value="true" />
+      <created>1717178311934</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717178311934</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +176,7 @@
     <MESSAGE value="1605" />
     <MESSAGE value="limpeza" />
     <MESSAGE value="Novas rotas e paginas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Novas rotas e paginas" />
+    <MESSAGE value="Ajuste do HTML e das rotas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajuste do HTML e das rotas" />
   </component>
 </project>
