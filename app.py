@@ -17,7 +17,7 @@ def minhaPag():
 
         if usuario:
             session['email'] = usuario['email']
-            return render_template('menu.html')
+            return render_template('/menu')
         else:
             texto = 'login ou senha incorretos'
             return render_template('login.html', aviso=texto)
@@ -47,13 +47,7 @@ def logout():
 
 @app.route('/menu')
 def menu():
-    tipo_usuario = get_tipo_usuario()  # assume this function returns the tipo of the current user
-    if tipo_usuario == "Admin":
-        mostrar_controle_de_usuarios = True
-    else:
-        mostrar_controle_de_usuarios = False
-
-    return render_template('menu.html', mostrar_controle_de_usuarios=mostrar_controle_de_usuarios)
+    return render_template('menu.html')
 @app.route('/meuPerfil')
 def perfil():
     return render_template('perfil.html')
