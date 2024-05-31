@@ -54,7 +54,7 @@ def menu():
         mostrar_controle_de_usuarios = False
 
     return render_template('menu.html', mostrar_controle_de_usuarios=mostrar_controle_de_usuarios)
-@app.route('/perfil')
+@app.route('/meuPerfil')
 def perfil():
     return render_template('perfil.html')
 
