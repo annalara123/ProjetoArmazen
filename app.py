@@ -8,11 +8,11 @@ app = Flask(__name__)
 app.secret_key = "jk2h3kj23hrk2h5"
 app.config['UPLOAD_FOLDER'] = 'static/imagens/'
 
-@app.route("/", methods=['GET', 'POST']) # decorator
+@app.route("/login", methods=['GET', 'POST']) # decorator
 def minhaPag():
     if request.method == 'POST':
-        email = request.form['email']
-        password = request.form['senha']
+        email = request.form.get['email']
+        password = request.form.get['senha']
         usuario = logar_usuario(email, password)
 
         if usuario:
@@ -26,10 +26,10 @@ def minhaPag():
 @app.route('/cadastro', methods=['GET', 'POST'])
 def cadastro():
     if request.method == 'POST':
-        nome = request.form['nome']
-        email = request.form['email']
-        senha = request.form['password']
-        tipo = request.form['tipo']
+        nome = request.form.get['nome']
+        email = request.form.get['email']
+        senha = request.form.get['password']
+        tipo = request.form.get['tipo']
 
         cadastrar_usuario(nome, email, senha, tipo)
 
